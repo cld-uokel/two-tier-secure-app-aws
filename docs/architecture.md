@@ -10,3 +10,11 @@
 ## EC2 Instances
 - `web-server`: public subnet, has public IP
 - `database-server`: private subnet, no public IP
+
+## Security
+- `web-server-sg`: allows HTTP (80) and SSH (22) from anywhere
+- `database-server-sg`: allows MySQL (3306) only from `web-server-sg`
+
+### NACLs (Network ACLs)
+- `public-nacl`: allows HTTP,HTTPs, SSH inbound;
+- `private-nacl`: allows traffic from public subnet (10.0.1.0/24) only
