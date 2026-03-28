@@ -18,3 +18,7 @@
 ### NACLs (Network ACLs)
 - `public-nacl`: allows HTTP,HTTPs, SSH inbound;
 - `private-nacl`: allows traffic from public subnet (10.0.1.0/24) only
+
+## Web Server
+- Installed Apache on`web-server` EC2 to serve a simple HTML page
+- Accessible via public IP on port 80
