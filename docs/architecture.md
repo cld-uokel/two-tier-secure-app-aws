@@ -22,3 +22,9 @@
 ## Web Server
 - Installed Apache on`web-server` EC2 to serve a simple HTML page
 - Accessible via public IP on port 80
+
+## Database Server
+- MariaDB 105 installed on `database-server` EC2 ( had to use MariaDB instead of mysql cause it runs on Amazon Linux 2023)
+- Only accessible from `web-server` via private IP (10.0.2.146)
+- To SSH into database-server you must first SSH into web-server
+- Flow: Local machine → web-server (public IP) → database-server (private IP)
