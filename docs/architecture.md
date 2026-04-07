@@ -28,3 +28,13 @@
 - Only accessible from `web-server` via private IP (10.0.2.146)
 - To SSH into database-server you must first SSH into web-server
 - Flow: Local machine → web-server (public IP) → database-server (private IP)
+
+## Web-Database Connection
+- Used MariaDB to create a database and a user
+- That user was created with access limited to public subnet to add an extra layer of security
+- The web server connnected with success to the db via the private IP. I tested the connecton via db-test.php
+
+## Stack
+- Frontend: Apache + PHP
+- Backend: MariaDB
+
